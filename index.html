@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vegetarain Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="/site.webmanifest">     -->
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div id="up">.</div>
+    <nav id="navbar">
+        <div class="container">
+            <div class="Menu">
+                <a href="#up">Menu</a>
+            </div>
+            <div id="text">Vegetarian Hotel</div>
+            <div class="Menu Admin">
+                <a class="admin" href="#new_item">Admin</a>
+            </div>
+        </div>
+
+    </nav>
+    <section class="item_container" id="Menu">
+        <div class="container">
+            <!-- <div class="itembox">
+                <!-- <span class="code">1. Foodname</span>
+                <!-- <span class="Foodname">Foodname</span> -->
+            <!-- <br> -->
+            <!-- <span class="price">₹ cost</span> -->
+            <!-- <br> -->
+            <!-- <span class="quantity">
+                    <span class="plus">+</span>
+                    <span class="quan">0</span>
+                    <span class="minus">-</span> -->
+            <!-- </span> -->
+            <!-- </div>  -->
+        </div>
+    </section>
+    <section class="BillButton">
+        <div class="container">
+            <button class="b" href="#show">
+                Bill
+            </button>
+        </div>
+    </section>
+    <section class="Bill" id="show">
+        <div class="container">
+            <div class="input_box" style="display: none;">
+                <table class="content-table">
+                    <caption style="caption-side:top; font-size: 20px; margin-bottom: 5px ; "><strong>Bill</strong>
+                    </caption>
+                    <thead>
+                        <!-- <th>Sno.</th> -->
+                        <th>Description</th>
+                        <th>QTY</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tbody class="A">
+
+                    </tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>samosa</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>20</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td colspan="4">Subtotal</td>
+                        <td class="Subtotal"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">CGST</td>
+                        <td class="CGST"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">SGST</td>
+                        <td class="SGST"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td class="Total"></td>
+                    </tr> -->
+
+                </table>
+
+                <!-- <div class="Total">
+                <span>Subtotal</span><br> 
+                <span>CGST</span><br>
+                <span>SGST</span><br>
+                <span>Total</span>
+
+                </div> -->
+
+
+            </div>
+        </div>
+
+    </section>
+    <section class="input_item" id="new_item">
+        <div class="container">
+            <div class="input_box" style="display: none;">
+                <div class="buttons">
+                    <button class="button" id="button1">New Item</button>
+                    <button class="button" id="button3">Edit</button>
+                    <button class="button" id="button2">Remove Item</button>
+                </div>
+                <div class="Additem">
+                    <input class="fp" id="fp1" type="text" placeholder="Enter the Food Item">
+                    <input class="fp" id="fp2" type="text" placeholder="Enter the price">
+                    <button class="button" id="add">Add</button>
+                </div>
+                <div class="editem" style="display: none;">
+                    <div class="section1">
+                        <input class="fp" id="efp1" type="text" placeholder="Enter the code">
+                        <button class="button" id="edm">Next</button>
+                    </div>
+                    <div class="section2" style="display: none;">
+                        <input class="fp" id="fp3" type="text" placeholder="Enter the New Food Item">
+                        <input class="fp" id="fp4" type="text" placeholder="Enter the New price">
+                        <button class="button" id="Change">Change</button>
+                    </div>
+                </div>
+                <div class="Remitem" style="display: none;">
+                    <input class="fp" id="rfp1" type="text" placeholder="Enter the code">
+                    <button class="button" id="rem">Remove</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script src="hotel.js"></script>
+
+</html>
