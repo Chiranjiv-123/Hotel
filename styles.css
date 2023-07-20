@@ -296,6 +296,7 @@ table{
     border-radius: 10px;
     line-height: 10px;
     margin: 5px;
+    cursor: button;
 }
 
 .buttons .button{
